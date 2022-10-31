@@ -2,10 +2,15 @@
   "name" : "whisper-dialog",
   "title" : "Whisper Dialog",
   "description" : "Sends dialog to specificed connected user.",
-  "author" : ["kekilla#7036"],
+  "authors" :  [
+    { "name" : "kekilla#7036" },
+    { "name" : "Kristian D" } 
+  ],
   "version" : "",
-  "minimumCoreVersion" : "0.8.0",
-  "compatibleCoreVersion" : "0.8.9",
+  "compatibility" : {
+    "minimum" : "10",
+    "verified" : "10"
+  },
   "esmodules" : [
     "scripts/hooks.js"
   ],
@@ -25,7 +30,7 @@
     }
   ],
   "socket" : true,
-  "url" : "https://github.com/Kekilla0/whisper-dialog",
+  "url" : "https://github.com/kdomke/whisper-dialog",
   "manifest" : "",
   "download" : ""
 }
