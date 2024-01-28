@@ -2,8 +2,8 @@
   "wd.setting.gmOnly.title" : "Dostęp tylko dla MG",
   "wd.setting.gmOnly.hint" : "Limituje dostep tylko dla MG, aby uniknąc złosliwych zachowań",
 
-  "wd.setting.icon.title" : "Render Chat Window Icon",
-  "wd.setting.icon.hint" : "Disallows Icon on Chat Window",
+  "wd.setting.icon.title" : "Pokazuj ikonke w opcjach czatu",
+  "wd.setting.icon.hint" : "Ukryj ikone WhisperDialog wopcjach czatu",
 
   "wd.setting.font_size.title" : "Rozmiar czcionki w wiadomości",
   "wd.setting.font_size.hint" : "Pozwala ustalić rozmiar czcionki w wysyłanej wiadmomości",
