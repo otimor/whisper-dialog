@@ -85,7 +85,7 @@ export class WhisperDialog extends Dialog{
       logger.debug("Submit | Data    | ", this.data);
       logger.debug("Submit | Options | ", this.options);
 
-      if(button.label === "Submit"){
+      if(button.label === settings.i18n("wd.dialog.button.submit")){
         logger.debug("Submit is clicked:",
                 element.find('[name=user]',
                 element.find('[name=content]')[0].value,
