@@ -38,6 +38,7 @@ export class WhisperDialog extends Dialog{
     */
     this.options.skipDialog = !!options?.skipDialog;
     this.options.chatWhisper = !!options?.chatWhisper;
+    logger.debug("Options: ", this.options.skipDialog,this.options.chatWhisper)
 
     if(this.data.users.length === 0) return logger.error(settings.i18n("wd.dialog.noUserError"));
     if(settings.value("gmOnly") && !game.user.isGM) return logger.error(settings.i18n("wd.dialog.notGMError"));
@@ -84,14 +85,20 @@ export class WhisperDialog extends Dialog{
       logger.debug("Submit | Data    | ", this.data);
       logger.debug("Submit | Options | ", this.options);
 
-      if(button.label === "Submit")
-        logger.debug("Submit is clicked:", element.find('[name=user]', element.find('[name=content]')[0].value, lement.find('[name=whisper]')[0].checked)
+      if(button.label === "Submit"){
+        logger.debug("Submit is clicked:",
+                element.find('[name=user]',
+                element.find('[name=content]')[0].value,
+                element.find('[name=whisper]')[0].checked)
         WhisperDialog.emitData({
           users : Array.from(element.find('[name=user]')).filter(ele=> ele.checked).map(ele => ele.id),
           content : element.find('[name=content]')[0].value,
           whisper : element.find('[name=whisper]')[0].checked,
         })
-
+        }
+    else{
+        logger.debug("Other then Submit button was pressed"))
+        }
     }catch(err) {
       logger.error(err);
     }
