@@ -39,5 +39,5 @@
   "socket" : true,
   "url" : "https://github.com/otimor/whisper-dialog",
   "manifest" : "https://raw.githubusercontent.com/otimor/whisper-dialog/master/module.json",
-  "download" : "https://github.com/otimor/whisper-dialog/raw/v1/downloads/whisperdialog.zip",
+  "download" : "https://github.com/otimor/whisper-dialog/raw/v1/downloads/whisperdialog.zip"
 }
