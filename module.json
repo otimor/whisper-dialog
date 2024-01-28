@@ -1,5 +1,5 @@
 {
-  "id": "foundry_whisper_dialog",
+  "id": "FoundryWhisperDialog",
   "name" : "whisper-dialog",
   "title" : "Whisper Dialog",
   "description" : "Sends dialog to specificed connected user.",
