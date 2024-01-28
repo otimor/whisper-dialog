@@ -60,6 +60,8 @@ export class WhisperDialog extends Dialog{
       classes : [settings.KEY],
       jQuery : true,
       width : 600,
+      height : 300,
+      resizable: true
     });
   }
 
@@ -83,6 +85,7 @@ export class WhisperDialog extends Dialog{
       logger.debug("Submit | Options | ", this.options);
 
       if(button.label === "Submit")
+        logger.debug("Submit is clicked:", element.find('[name=user]', element.find('[name=content]')[0].value, lement.find('[name=whisper]')[0].checked)
         WhisperDialog.emitData({
           users : Array.from(element.find('[name=user]')).filter(ele=> ele.checked).map(ele => ele.id),
           content : element.find('[name=content]')[0].value,
