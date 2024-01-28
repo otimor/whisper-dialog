@@ -18,6 +18,6 @@
   "wd.dialog.content.chatWhisper" : "Napisz na czacie",
   "wd.dialog.content.message" : "Wiadomość:",
 
-  "wd.dialog.button.submit" : "Wyslij",
+  "wd.dialog.button.submit" : "Submit",
   "wd.dialog.button.cancel" : "Anuluj"
 }
