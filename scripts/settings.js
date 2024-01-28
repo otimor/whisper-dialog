@@ -1,9 +1,9 @@
 import { logger } from "./logger.js";
 
 export class settings{
-  static TITLE = "Whisper Dialog";
-  static NAME = "whisper-dialog";
-  static KEY = "WhisperDialog";
+  static TITLE = "Whisper Dialog v10";
+  static NAME = "whisper-dialog-v10";
+  static KEY = "WhisperDialogV10";
 
   static register(){
     logger.info("Registering all Settings");
